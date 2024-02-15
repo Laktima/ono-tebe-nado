@@ -12,39 +12,35 @@
   <body>
     <!---->
     <header>
-      <div class="header_menu_left">
-        <div class="header_menu">
-          <nav class="header_menu_nav">
-            <ul class="header_menu_list">
-              <li class="header_menu-item">
-                <a class="header_menu-active" href="#0">главная</a>
-              </li>
-              <li class="header_menu-item">
-                <a class="header_menu-link" href="#about">посмотреть лоты</a>
-              </li>
-              <li class="header_menu-item">
-                <a class="header_menu-link" href="#about">об аукционе</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header_menu_logo">
-          <a href="#0"><img class="icon" src="./images/logo-black.svg" alt="Логотип"></a>
-        </div>
+      <div class="header_menu">
+        <nav class="header_menu_nav">
+          <ul class="header_menu_list">
+            <li class="header_menu-item">
+              <a class="header_menu-link header_menu-active" href="#0">главная</a>
+            </li>
+            <li class="header_menu-item">
+              <a class="header_menu-link" href="#about">посмотреть лоты</a>
+            </li>
+            <li class="header_menu-item">
+              <a class="header_menu-link" href="#about">об аукционе</a>
+            </li>
+          </ul>
+        </nav>
+        <a href="#0"><img class="icon" src="./images/logo-black.svg" alt="Логотип"></a>
       </div>
-      <div class="header_menu_contact">
-        <ul class="header_contact_list">
+      <address class="header_address">
+        <ul class="address_list">
           <li>
-            <a class="header_contact-link" href="tel:+99995555555">+9 999 555 5555</a>
+            <a class="address-link" href="tel:+99995555555">+9 999 555 5555</a>
           </li>
           <li>
-            <a class="header_contact-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+            <a class="address-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           </li>
-          <li class="header_contact">
+          <li>
             наб. Принсенграхт 263-<br>265, Амстердам
           </li>
         </ul>
-      </div>
+      </address>
     </header>
     <!---->
     <main>
@@ -52,39 +48,31 @@
       <section class="cover">
         <div class="cover_title-container">
           <h1 class="cover_title">
-            <span class="accent-span"><span class="cover_title_06em"><span class="cover_title_03em">о</span>но</span></span>
-            <span class="accent-span text-center"><span class="cover_title_06em"><span class="cover_title_03em">те</span>бе</span></span>
-            <span class="accent-span text-right"><span class="cover_title_03em"><span class="cover_title_06em">н</span>ад</span>о</span>
+            <span class="accent-span"><span class="cover_title_spacing_s"><span class="cover_title_spacing_xs">о</span>но</span></span>
+            <span class="accent-span text-center"><span class="cover_title_spacing_s"><span class="cover_title_spacing_xs">те</span>бе</span></span>
+            <span class="accent-span text-right"><span class="cover_title_spacing_xs"><span class="cover_title_spacing_s">н</span>ад</span>о</span>
           </h1>
         </div>
         <div class="cover__text-container">
           <div class="cover_text">
-            <p>Аукцио<span class="cover_text_09em">н</span> вещей<span class="cover_text_11em">,</span><span class="cover_text_08em">в</span> которы<span class="cover_text_08em">е</span> никт<span class="cover_text_09em">о</span> н<span class="cover_text_08em">е</span> верил</p>
+            <p>Аукцио<span class="cover_text_spacing_s">н</span> вещей<span class="cover_text_spacing_l">,</span><span class="cover_text_spacing_xs">в</span> которы<span class="cover_text_spacing_xs">е</span> никт<span class="cover_text_spacing_s">о</span> н<span class="cover_text_spacing_xs">е</span> верил</p>
           </div>
-          <a class="cover_button-link" href="#about">
-            <div class="cover_button">Сделать ставку</div>
-          </a>
-        </div>
-        <div class="cover_background_image">
-          <div class="overlay_image"></div>
-          <img class="background_image" src="./images/cover.jpg" alt="фоновое изображение">
+          <button class="cover_button">
+            Сделать ставку
+          </button>
         </div>
       </section>
     <!---->
       <section class="lots">
         <h2 class="lots_title">Лоты</h2>
         <div class="lots_container">
-          <div class="lots_card">
+          <a class="lots_card lots_image_film" href="#card">
             <h3 class="lots_card_title">Фильм режиссёра, который бросил киношколу</h3>
             <p class="lots_card_text">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, 
               если бы вы не знали, что режиссёр — Пол Томас Андерсон?
             </p>
-            <div class="lots_image_container">
-              <img class="lott_image" src="./images/card-lot-01.jpg" alt="Фоновая картинка лота 1">
-              <div class="overlay_image"></div>
-            </div>
-          </div>
-          <div class="lots_card">
+          </a>
+          <a class="lots_card lots_image_book" href="#card">
             <h3 class="lots_card_title">Книга, где описан один скучный день из жизни рекламного агента</h3>
             <p class="lots_card_text">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с 
               переходами на древнеанглийский. В ней одновременно рассказывается 
@@ -92,23 +80,15 @@
               И это всё накладывается на эпическую поэму Гомера. Сколько бы вы 
               поставили на «Улисса» Джеймса Джойса?
             </p>
-            <div class="lots_image_container">
-                <img class="lott_image" src="./images/card-lot-02.jpg" alt="Фоновая картинка лота 2">
-                <div class="overlay_image"></div>
-            </div>
-          </div>
-          <div class="lots_card">
+          </a>
+          <a class="lots_card lots_image_art" href="#card">
             <h3 class="lots_card_title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
             <p class="lots_card_text">Ну действительно, там линия, тут кружочек, а здесь и вовсе 
               что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... 
               Сколько бы вы на такое поставили, если бы не знали, что это — одна из 
               революционных работ Кандинского?
             </p>
-            <div class="lots_image_container">
-              <img class="lott_image" src="./images/card-lot-03.jpg" alt="Фоновая картинка лота 3">
-              <div class="overlay_image"></div>
-            </div>
-          </div>
+          </a>
         </div>
         <a class="lots_more" href="#learnmore">посмотреть больше</a>
       </section>
@@ -136,34 +116,32 @@
     </main>
     <!---->
     <footer>
-      <div class="footer_menu_contact">
-        <ul class="footer_contact_list">
+      <address>
+        <ul class="address_list">
           <li>
-            <a class="footer_contact-link" href="tel:+99995555555">+9 999 555 5555</a>
+            <a class="address-link" href="tel:+99995555555">+9 999 555 5555</a>
           </li>
           <li>
-            <a class="footer_contact-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+            <a class="address-link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           </li>
-          <li class="footer_contact">
+          <li>
             наб. Принсенграхт 263-<br>265, Амстердам
           </li>
         </ul>
-      </div>
-      <div class="footer_menu">
-        <nav class="footer_menu_nav">
-          <ul class="footer_menu_list">
-            <li class="footer_menu-item">
-              <a class="footer_menu-active" href="#0">главная</a>
-            </li>
-            <li class="footer_menu-item">
-              <a class="footer_menu-link" href="#about">посмотреть лоты</a>
-            </li>
-            <li class="footer_menu-item">
-              <a class="footer_menu-link" href="#about">об аукционе</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      </address>
+      <nav class="footer_menu_nav">
+        <ul class="footer_menu_list">
+          <li class="footer_menu-item">
+            <a class="footer_menu-link footer_menu-active" href="#0">главная</a>
+          </li>
+          <li class="footer_menu-item">
+            <a class="footer_menu-link" href="#about">посмотреть лоты</a>
+          </li>
+          <li class="footer_menu-item">
+            <a class="footer_menu-link" href="#about">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
       <div class="footer_menu_icon">
         <a class="footer_menu_href" href="#about">
           <img
