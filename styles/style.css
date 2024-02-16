@@ -78,11 +78,15 @@ header {
 
 /*Стили COVER_начало*/
 
+:root {
+  --liner-gradient: rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6);
+}
+
 .cover {
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(var(--liner-gradient)),
     url(../images/cover.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .cover_title-container {
@@ -153,9 +157,9 @@ header {
   border: 1px solid #fff;
   padding: 12px 32px 11px 31px;
   color: #fff;
+  font-family: Raleway, sans-serif;
   font-weight: 400;
   font-size: 22px;
-  font-family: Raleway, sans-serif;
   line-height: 28px;
   text-transform: uppercase;
   background-color: transparent;
@@ -201,17 +205,17 @@ header {
 }
 
 .lots_image_film {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(var(--liner-gradient)),
     url(../images/card-lot-01.jpg);
 }
 
 .lots_image_book {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(var(--liner-gradient)),
     url(../images/card-lot-02.jpg);
 }
 
 .lots_image_art {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(var(--liner-gradient)),
     url(../images/card-lot-03.jpg);
 }
 
@@ -230,15 +234,6 @@ header {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-}
-
-.lots_image_container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
 }
 
 .lott_image {
@@ -318,8 +313,6 @@ header {
 footer {
   display: flex;
   justify-content: space-between;
-  width: 1000px;
-  height: 98px;
   margin: 0 50px 88px 50px;
 }
 
